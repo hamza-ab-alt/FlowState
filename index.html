@@ -77,6 +77,59 @@
     </div>
 
   </div>
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<title>FlowState</title>
+</head>
+
+<body class="min-h-screen flex justify-center items-center bg-[#d9b38c]">
+
+<div class="w-[360px] min-h-screen bg-[#e6c29f] shadow-xl p-4 flex flex-col">
+
+<div class="flex justify-between items-center mb-4">
+<h1 class="text-xl font-semibold">FlowState</h1>
+</div>
+
+<div class="bg-[#d9b38c] rounded-xl text-center py-2 mb-4 font-medium">
+Pomodoro Timer
+</div>
+
+<div id="timerDisplay" class="text-center text-5xl font-bold mb-4">
+25:00
+</div>
+
+<div id="status" class="border-2 border-purple-400 text-center rounded-lg py-1 mb-3 font-medium text-purple-600">
+FOCUS
+</div>
+
+<div class="flex gap-4 mb-4">
+<button id="startBtn" class="flex-1 bg-white rounded-xl py-4 shadow">START</button>
+<button id="resetBtn" class="flex-1 bg-white rounded-xl py-4 shadow">RESET</button>
+</div>
+
+<h2 class="font-semibold mb-2">✓ Les Taches</h2>
+
+<div id="todoList" class="space-y-3 flex-1"></div>
+
+<div id="emptyState" class="text-center text-sm opacity-70">
+Aucune tâche. Respire 😌
+</div>
+
+<div class="flex gap-2 mt-2">
+<input id="todoInput" class="flex-1 rounded-lg p-2" placeholder="Nouvelle tâche">
+<button id="addBtn" class="bg-white px-4 rounded-lg">+</button>
+</div>
+
+</div>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
 
 </body>
 </html>
