@@ -32,7 +32,7 @@ export const renderTodo = (container, tasks, add, remove, toggle) => {
   if (!tasks.length) {
     const empty = document.createElement("p");
     empty.className = "text-[#8B7355]/70 italic py-4 text-center";
-    empty.textContent = "✨ Aucune tâche… commence petit, gagne grand.";
+    empty.textContent = " Aucune tâche… commence petit, gagne grand.";
     wrapper.append(empty);
   }
 
