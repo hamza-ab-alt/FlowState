@@ -19,3 +19,9 @@ export const initTodo = container => {
     update();
   };
 
+  const remove = id => {
+    tasks = tasks.filter(t => t.id !== id);
+    update();
+  };
+
+ 
