@@ -24,4 +24,12 @@ export const initTodo = container => {
     update();
   };
 
- 
+  const toggle = id => {
+    tasks = tasks.map(t =>
+      t.id === id ? { ...t, done: !t.done } : t
+    );
+    update();
+  };
+
+  update();
+};
